@@ -2,7 +2,7 @@ spring:
   application:
     name: tmxk-service
   config:
-    import: "nacos:${spring.application.name}.yaml?group=dev&refreshEnabled=true"
+    import: "nacos:${spring.application.name}.yaml?group=prod&refreshEnabled=true"
   cloud:
     nacos:
       config:
