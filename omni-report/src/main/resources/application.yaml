@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: omni-report
+  config:
+    import: "nacos:${spring.application.name}.yaml?group=${spring.profiles.active}&refreshEnabled=true"
+  cloud:
+    nacos:
+      config:
+        server-addr: ${NACOS_SERVER_HOST:127.0.0.1}:${NACOS_SERVER_PORT:8848}
+        file-extension: yaml

@@ -1,0 +1,1 @@
+Licensed under the MIT License. See [LICENSE](LICENSE.md) for details.
